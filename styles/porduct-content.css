@@ -1,0 +1,113 @@
+.product-display{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width:450px){
+  .product-display{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(min-width:570px){
+  .product-display{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media(min-width:800px){
+  .product-display{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+@media(min-width:1000px){
+  .product-display{
+    grid-template-columns: repeat(5,1fr);
+  }
+}
+@media(min-width:1300px){
+  .product-display{
+    grid-template-columns: repeat(6,1fr);
+  }
+}
+.product-grid{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 22px;
+  padding-right: 20px;
+  border-bottom: solid;
+  border-bottom-width:1px;
+  border-bottom-color: rgb(236, 234, 234);
+  border-right:solid;
+  border-right-width:1px;
+  border-right-color: rgb(236, 234, 234);
+}
+.product-image{
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 100%;
+}
+.image-container{
+  display: flex;
+  height: 200px;
+  justify-content: center;
+}
+.product-name{
+  height: 45px;
+}
+.rating-section{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.rating-stars{
+  width: 100px;
+  margin-right: 10px;
+}
+.rating-count{
+  color: rgb(34, 115, 145);
+  cursor: pointer;
+}
+.rating-count:hover{
+  color: rgb(199, 83, 5);
+}
+.cost-of-product{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.number-list{
+  border-radius: 6px;
+  border-color: lightgray;
+  background-color: rgb(247, 244, 244);
+  padding: 5px;
+}
+.dropdown-product{
+  margin-bottom: 10px;
+}
+.checkmark{
+  width: 20px;
+  margin-right: 10px;
+}
+.added-section{
+  margin-bottom: 10px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  color: green;
+}
+.add-cart-section{
+  margin-bottom: 20px;
+}
+.cart-button{
+  background-color: rgb(255, 208, 0);
+  border: none;
+  font-size: 12px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.cart-button:hover{
+background-color: rgb(221, 181, 4);
+}
+.added-section-js{
+  opacity: 1;
+}
